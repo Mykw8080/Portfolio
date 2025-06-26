@@ -202,7 +202,7 @@ const projects :{
 				  },
 			],
 			images: ["/projectimg/avm.webp"],
-			video: "/projectimg/User-guidance.mp4",
+			video: "/projectimg/User-Guidance.mp4",
 			source_code_link: "",
 			platform: "Web",
 			deploy_link: "https://jhah.conurets.com",
