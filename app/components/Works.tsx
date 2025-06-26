@@ -21,7 +21,7 @@ type ProjectCardProps = {
 	source_code_link?: string;
 	video?: string;
 	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web";
+	platform: ("Angular" | "Blender" | "Next" | "Tailwind" | "Web" | "Python")[];
 };
 
 const ProjectCard = ({
@@ -54,69 +54,74 @@ const ProjectCard = ({
 				options={{ max: 45, scale: 1, speed: 450 }}
 				className="bg-tertiary p-5 rounded-2xl sm:w-[550px] w-full"
 			>
-				<div className="relative w-full h-[240px] overflow-hidden rounded-2xl">
-					{video ? (
-						<video
-							src={video}
-							autoPlay
-							muted
-							loop
-							playsInline
-							className="w-full h-full sm:object-cover object-fill rounded-2xl"
-						/>
-					) : (
-						<AnimatePresence initial={false} custom={direction} mode="wait">
-							<motion.div
-								key={images[currentImageIndex]}
-								custom={direction}
-								initial={{ x: 300, opacity: 0 }}
-								animate={{ x: 0, opacity: 1 }}
-								exit={{ x: -300, opacity: 0 }}
+				<a href={deploy_link} target="_blank" rel="noopener noreferrer">
+					<div className="relative w-full h-[240px] overflow-hidden rounded-2xl">
+						{video ? (
+							<video
+								src={video}
+								autoPlay
+								muted
+								loop
+								playsInline
+								className="w-full h-full sm:object-cover object-fill rounded-2xl"
+							/>
+						) : (
+							<AnimatePresence initial={false} custom={direction} mode="wait">
+								<motion.div
+									key={images[currentImageIndex]}
+									custom={direction}
+									initial={{ x: 300, opacity: 0 }}
+									animate={{ x: 0, opacity: 1 }}
+									exit={{ x: -300, opacity: 0 }}
 									transition={{
 										x: { type: "spring", stiffness: 400, damping: 30 },
 										opacity: { duration: 0.15 },
 									}}
-								
-								className="absolute inset-0 w-full h-full"
-							>
-								<Image
-									src={images[currentImageIndex]}
-									alt={`project_image_${currentImageIndex}`}
-									fill
+
+									className="absolute inset-0 w-full h-full"
+								>
+									<Image
+										src={images[currentImageIndex]}
+										alt={`project_image_${currentImageIndex}`}
+										fill
 										className="sm:object-cover object-fill rounded-2xl"
 
-								/>
-							</motion.div>
-						</AnimatePresence>
-					)}
+									/>
+								</motion.div>
+							</AnimatePresence>
+						)}
 
-					{/* Platform icon */}
-					<div className="absolute inset-0 flex justify-end m-3 card-img_hover z-10">
-						<Link
-							href={deploy_link}
-							target="_blank"
-							className="black-gradient w-10 h-10 ml-2 rounded-full flex justify-center items-center cursor-pointer"
-						>
-							<Image
-								src={
-									platform === "Netlify"
-										? "/tech/netlify.webp"
-										: platform === "Vercel"
-											? "/tech/vercel.svg"
-											: platform === "Wordpress"
-												? "/tech/wordpress.webp"
-												: platform === "Web"
-													? "/web.webp"
-													: "/tech/figma.webp"
-								}
-								width={24}
-								height={24}
-								alt="platform"
-								className="object-contain"
-							/>
-						</Link>
+						{/* Platform icon */}
+						<div className="absolute inset-0 flex justify-end m-3 card-img_hover z-10 gap-2">
+							{platform.map((tech, i) => (
+								<div
+									key={i}
+									className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
+								>
+									<Image
+										src={
+											tech === "Angular"
+												? "/tech/angular.svg"
+												: tech === "Blender"
+													? "/tech/blender.svg"
+													: tech === "Next"
+														? "/tech/nextjs.svg"
+														: tech === "Python"
+															? "/tech/python.svg"
+														: tech === "Tailwind"
+															? "/tech/tailwind.webp"
+															: "/web.webp"
+										}
+										width={24}
+										height={24}
+										alt={tech}
+										className="object-contain"
+									/>
+								</div>
+							))}
+						</div>
 					</div>
-				</div>
+				</a>
 
 				<div className="mt-5">
 					<h3 className="text-white font-bold text-[24px]">{name}</h3>

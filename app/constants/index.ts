@@ -157,7 +157,7 @@ const projects :{
 	video?: string;
 	source_code_link?: string;
 	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
+	platform: ("Angular" | "Blender" | "Next" | "Tailwind" | "Web" | "Python")[];
 }[] = [
 		{
 			name: "ParkSmart | John Hopkins Aramco Healthcare, KSA",
@@ -204,7 +204,7 @@ const projects :{
 			images: ["/projectimg/avm.webp"],
 			video: "/projectimg/User-Guidance.mp4",
 			source_code_link: "",
-			platform: "Web",
+			platform: ["Angular"],
 			deploy_link: "https://jhah.conurets.com",
 		},
 		{
@@ -255,8 +255,8 @@ const projects :{
 			],
 			images: ["/projectimg/OLIOS2.png", "/projectimg/OLIOS.webp"],
 			source_code_link: "",
-			platform: "Web",
-			deploy_link: "https://olios.conurets.com/",
+			platform: ["Angular"],
+			deploy_link: "https://olios-peo.conurets.com/",
 		},
 		{
 			name: "HIVE",
@@ -301,8 +301,8 @@ const projects :{
 				},
 			],
 			images: ["/projectimg/hive.png", "/projectimg/hive3.png", "/projectimg/hive2.png"],
-			platform: "Web",
-			deploy_link: "/",
+			platform: ["Angular","Blender"],
+			deploy_link: "#",
 		},
 		{
 			name: "Spotly",
@@ -348,8 +348,55 @@ const projects :{
 			],
 			images: ["/projectimg/spotly.png", "/projectimg/spotly2.png", "/projectimg/spotly3.png"],
 			source_code_link: "",
-			platform: "Web",
-			deploy_link: "",
+			platform: ["Next", "Tailwind"],
+			deploy_link: "#",
+		},
+		{
+			name: "1 JOB",
+			description:
+				"Developed a responsive job search platform using Next.js and Tailwind CSS, allowing users to browse listings, apply instantly, and receive real-time job alerts directly on their device.",
+			tags: [
+				{
+					name: "NextJS",
+					color: "blue-text-gradient",
+				},
+				{
+					name: "ReactJS",
+					color: "orange-text-gradient",
+				},
+				{
+					name: "Tailwind",
+					color: "purple-text-gradient",
+				},
+				{
+					name: "Postgress",
+					color: "green-text-gradient",
+				},
+				{
+					name: "FastAPI",
+					color: "pink-text-gradient",
+				},
+				{
+					name: "Python",
+					color: "yellow-text-gradient",
+				},
+				{
+					name: "Artifical Intelligence",
+					color: "blue-text-gradient",
+				},
+				{
+					name: "Responsive UI",
+					color: "white-text-gradient",
+				},
+				{
+					name: "Job Searching",
+					color: "pink-text-gradient",
+				},
+			],
+			images: ["/projectimg/1job.png", "/projectimg/1job2.png"],
+			source_code_link: "",
+			platform: ["Next", "Python"],
+			deploy_link: "https://1jobplatform.com",
 		},
 ];
 
