@@ -1,7 +1,7 @@
 # 🚀 Mohid Warsi – 3D Portfolio Website
 
 <p align="center">
-  <img src="/READMEPHOTO.png" alt="3D Portfolio Preview" />
+  <img src="./READMEPHOTO.png" alt="3D Portfolio Preview" />
 </p>
 
 This is my personal **3D portfolio** built to showcase my work as a **Full-Stack Software Engineer**, featuring a dynamic user interface, 3D interactive elements, and responsive design. It’s optimized for performance, accessibility, and real-world usability across devices.
