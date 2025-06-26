@@ -33,7 +33,7 @@ const Hero = () => {
 				/>
 			</div> */}
 			{/* Replace Image with Spline 3D */}
-			<div className="opacity-0 xl:opacity-100">
+			<div className="hidden xl:block">
 				<div className="w-full flex justify-center items-center pt-[40vh] md:pt-32 relative">
 					<Spline scene="https://prod.spline.design/6VfGj6YlCKk4eouZ/scene.splinecode" />
 					<div className="absolute inset-0 z-10 w-full h-full" />
