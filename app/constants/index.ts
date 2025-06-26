@@ -349,7 +349,7 @@ const projects :{
 			images: ["/projectimg/spotly.png", "/projectimg/spotly2.png", "/projectimg/spotly3.png"],
 			source_code_link: "",
 			platform: "Web",
-			deploy_link: "https://admin-frontend-r705.onrender.com/",
+			deploy_link: "",
 		},
 ];
 

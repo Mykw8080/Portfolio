@@ -62,7 +62,7 @@ const ProjectCard = ({
 							muted
 							loop
 							playsInline
-							className="w-full h-full object-cover rounded-2xl"
+							className="w-full h-full sm:object-cover object-fill rounded-2xl"
 						/>
 					) : (
 						<AnimatePresence initial={false} custom={direction} mode="wait">
@@ -83,7 +83,8 @@ const ProjectCard = ({
 									src={images[currentImageIndex]}
 									alt={`project_image_${currentImageIndex}`}
 									fill
-									className="object-cover rounded-2xl"
+										className="sm:object-cover object-fill rounded-2xl"
+
 								/>
 							</motion.div>
 						</AnimatePresence>
