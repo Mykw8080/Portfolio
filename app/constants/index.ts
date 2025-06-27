@@ -259,7 +259,7 @@ const projects :{
 			deploy_link: "https://olios-peo.conurets.com/",
 		},
 		{
-			name: "HIVE",
+			name: "HIVE | 3D Smart Building",
 			description:
 				"Designed and developed an interactive 3D building model using Angular to visualize real-time analytics from installed IoT sensors, including lighting, bin-wise waste levels, and environmental data within the structure.",
 			tags: [
@@ -305,7 +305,7 @@ const projects :{
 			deploy_link: "#",
 		},
 		{
-			name: "Spotly",
+			name: "Spotly | Rent a Spot",
 			description:
 				"Developed a front-end parking rental platform using Next.js, and Tailwind, enabling users to list, rent, and manage parking spots by the hour or day with real-time availability and booking.",
 			tags: [
@@ -352,7 +352,7 @@ const projects :{
 			deploy_link: "#",
 		},
 		{
-			name: "1 JOB",
+			name: "1 JOB | AI-Powered Job Searching",
 			description:
 				"Developed a responsive job search platform using Next.js and Tailwind CSS, allowing users to browse listings, apply instantly, and receive real-time job alerts directly on their device.",
 			tags: [
@@ -397,6 +397,53 @@ const projects :{
 			source_code_link: "",
 			platform: ["Next", "Python"],
 			deploy_link: "https://1jobplatform.com",
+		},
+		{
+			name: "Smart Access Gate | Real-Time Validation",
+			description:
+				"Built a smart access gate system using RFID readers and Milesight people counters to detect and authorize entries. The system grants access only to valid RFID users, while triggering visual alerts (e.g., red lights) for unauthorized entries, ensuring secure and automated gate control.",
+			tags: [
+				{
+					name: "NodeJS",
+					color: "green-text-gradient",
+				},
+				{
+					name: "ExpressJS",
+					color: "blue-text-gradient",
+				},
+				{
+					name: "RFID Integration",
+					color: "orange-text-gradient",
+				},
+				{
+					name: "IoT Devices",
+					color: "purple-text-gradient",
+				},
+				{
+					name: "Milesight",
+					color: "pink-text-gradient",
+				},
+				{
+					name: "Real-time Alerts",
+					color: "red-text-gradient",
+				},
+				{
+					name: "MQTT",
+					color: "yellow-text-gradient",
+				},
+				{
+					name: "Camera Sensors",
+					color: "white-text-gradient",
+				},
+				{
+					name: "Access Control",
+					color: "blue-text-gradient",
+				},
+			],
+			images: ["/projectimg/smg.png", "/projectimg/smg2.png"],
+			source_code_link: "",
+			platform: ["Angular", "Web"],
+			deploy_link: "#",
 		},
 ];
 

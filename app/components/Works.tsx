@@ -55,7 +55,7 @@ const ProjectCard = ({
 				className="bg-tertiary p-5 rounded-2xl sm:w-[550px] w-full"
 			>
 				<a href={deploy_link} target="_blank" rel="noopener noreferrer">
-					<div className="relative w-full h-[240px] overflow-hidden rounded-2xl">
+					<div className="relative w-full h-[275px] overflow-hidden rounded-2xl">
 						{video ? (
 							<video
 								src={video}
