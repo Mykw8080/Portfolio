@@ -6,7 +6,7 @@
 
 This is my personal **3D portfolio** built to showcase my work as a **Full-Stack Software Engineer**, featuring a dynamic user interface, 3D interactive elements, and responsive design. It’s optimized for performance, accessibility, and real-world usability across devices.
 
-🔗 **Live Demo:** [View My Portfolio](https://portfoliobyompatel.netlify.app/)
+🔗 **Live Demo:** [View My Portfolio](https://portfolio-pearl-five-33.vercel.app)
 
 ---
 
