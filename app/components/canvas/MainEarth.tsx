@@ -18,7 +18,7 @@ export default function MainEarth() {
     return (
         <div
             ref={ref}
-            className="lg:block w-full flex justify-center items-center pt-[35vh] md:pt-[40vh] lg:pt-14 relative"
+            className="lg:block w-full flex justify-center items-center pt-[40vh] sm:pt-[40vh] lg:pt-16 relative"
         >
             {visible && (
                 <div className="w-full aspect-square sm:aspect-video">

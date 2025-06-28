@@ -13,7 +13,7 @@ const Hero = () => {
 					<div className="w-5 h-5 rounded-full bg-[#915EFF] " />
 					<div className="w-1 sm:h-80 h-40 violet-gradient" />
 				</div>
-				<div className="relative z-50">
+				<div className="relative z-10">
 					<h1 className="heroHeadText text-white">
 						Hi, I&apos;m <span className="text-[#915EFF] ">Mohid Warsi</span>
 					</h1>
@@ -34,9 +34,11 @@ const Hero = () => {
 				/>
 			</div> */}
 			{/* Replace Image with Spline 3D */}
-			< MainEarth />
+			<div className="mx-7">
+				< MainEarth />
+			</div>
 
-			<div className="absolute xs:bottom-2 bottom-32 w-full flex justify-center items-center">
+			<div className="absolute xs:bottom-5 bottom-14 w-full flex justify-center items-center">
 				<a href="#about">
 					<div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
 						<motion.div
