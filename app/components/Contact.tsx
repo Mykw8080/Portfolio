@@ -15,7 +15,7 @@ const Contact = () => {
 				<p className="heroSubText">Get in Touch</p>
 				<h3 className="heroHeadText">Contact.</h3>
 
-				<div className="mt-12 flex flex-col gap-6 text-white text-lg">
+				<div className="mt-12 flex flex-col gap-6 text-white text-[1.5vh] sm:text-xl">
 					<div className="flex items-center gap-4">
 						<FaEnvelope className="text-pink-500 text-2xl" />
 						<a
