@@ -18,10 +18,10 @@ export default function MainEarth() {
     return (
         <div
             ref={ref}
-            className="hidden lg:flex w-full justify-center items-center pt-14 relative"
+            className="lg:block w-full flex justify-center items-center pt-[35vh] md:pt-[40vh] lg:pt-14 relative"
         >
             {visible && (
-                <div className="w-full max-w-[800px] aspect-video">
+                <div className="w-full aspect-square sm:aspect-video">
                     <Spline
                         scene="https://prod.spline.design/6VfGj6YlCKk4eouZ/scene.splinecode"
                         style={{ width: '100%', height: '100%' }}
