@@ -16,9 +16,17 @@ export default function MainEarth() {
     }, []);
 
     return (
-        <div ref={ref} className="w-full flex justify-center items-center pt-[40vh] md:pt-32 relative">
+        <div
+            ref={ref}
+            className="hidden lg:flex w-full justify-center items-center pt-14 relative"
+        >
             {visible && (
-                <Spline scene="https://prod.spline.design/6VfGj6YlCKk4eouZ/scene.splinecode" />
+                <div className="w-full max-w-[800px] aspect-video">
+                    <Spline
+                        scene="https://prod.spline.design/6VfGj6YlCKk4eouZ/scene.splinecode"
+                        style={{ width: '100%', height: '100%' }}
+                    />
+                </div>
             )}
             <div className="absolute inset-0 z-10 w-full h-full" />
         </div>
