@@ -25,6 +25,7 @@ export default function MainEarth() {
                     <Spline
                         scene="https://prod.spline.design/6VfGj6YlCKk4eouZ/scene.splinecode"
                         style={{ width: '100%', height: '100%' }}
+                        className='rounded-full shadow-lg'
                     />
                 </div>
             )}

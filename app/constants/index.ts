@@ -253,7 +253,7 @@ const projects :{
 					color: "lime-text-gradient",
 				  },
 			],
-			images: ["/projectimg/OLIOS2.png", "/projectimg/OLIOS.webp"],
+			images: ["/projectimg/OLIOS2.png", "/projectimg/OLIOS.png"],
 			source_code_link: "",
 			platform: ["Angular"],
 			deploy_link: "https://olios-peo.conurets.com/",
