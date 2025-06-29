@@ -187,7 +187,7 @@ const Works = () => {
 				<motion.div variants={textVariant()}>{headerContent}</motion.div>
 			)}
 
-			<div className="w-full flex">
+			<div className="w-full flex" id="projects">
 				{isMobile ? (
 					descriptionContent
 				) : (

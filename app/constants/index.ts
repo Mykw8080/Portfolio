@@ -12,6 +12,10 @@ export const navLinks = [
 		title: "Work",
 	},
 	{
+		id: "projects",
+		title: "Projects",
+	},
+	{
 		id: "contact",
 		title: "Contact",
 	},
@@ -23,15 +27,15 @@ const services = [
 		icon: "/web.webp",
 	},
 	{
-		title: "Data Visualization",
+		title: "UI / UX Designer",
 		icon: "/mobile.webp",
 	},
 	{
-		title: "Data Analytics",
+		title: "Data Handling & Analytics",
 		icon: "/creator.webp",
 	},
 	{
-		title: "Machine Learning",
+		title: "AI / Machine Learning",
 		icon: "/backend.webp",
 	},
 ];
@@ -56,6 +60,10 @@ const technologies = [
 	{
 		name: "Python",
 		icon: "/tech/python.svg",
+	},
+	{
+		name: "Angular",
+		icon: "/tech/angular.svg",
 	},
 	{
 		name: "React JS",
@@ -94,7 +102,7 @@ const experiences = [
 		iconBg: "#383E56",
 		date: "2025 -  Present",
 		points: [
-			"Frontend Development: Built responsive and high-performance web apps using Angular and React.js, ensuring mobile compatibility and fast load times.",
+			"Frontend Development: Built responsive and high-performance web apps using Angular and Next.js / React.js, ensuring mobile compatibility and fast load times.",
 			"Backend Integration: Developed RESTful APIs using Flask and FastAPI for efficient client-server communication and data management with MongoDB.",
 			"Geospatial Visualization: Integrated Mapbox to deliver interactive location-based dashboards for real-time parking and vehicle tracking systems.",
 			"3D Model Integration: Implemented interactive 3D models within Mapbox-powered dashboards to enhance spatial awareness and user engagement for real-time tracking systems.",
