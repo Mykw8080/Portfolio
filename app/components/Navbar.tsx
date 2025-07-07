@@ -44,8 +44,8 @@ const Navbar = () => {
 					<Link href="https://github.com/Mykw8080">
 						<Image
 							src="/logo.png"
-							width={80}
-							height={80}
+							width={50}
+							height={50}
 							alt="logo"
 							priority
 							className="object-contain"

@@ -377,7 +377,7 @@ const projects :{
 					color: "purple-text-gradient",
 				},
 				{
-					name: "Postgress",
+					name: "PostgresSQL",
 					color: "green-text-gradient",
 				},
 				{
